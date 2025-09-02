@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset */
 * {
     margin: 0;
@@ -1421,3 +1422,1427 @@ width: 30rem;
         }
 }
 
+=======
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+}
+
+/* Styling Umum */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+.main-container {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgba(0,0,0, 0.4);
+    position: fixed;
+    z-index: 99;
+}
+
+.header {
+    background: linear-gradient(to bottom right, #1E1E1E, #2A2A2B, #3F3F44);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    margin-right: 0.5rem;  
+}
+
+.namalogo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+}
+
+
+
+/* Navigasi Desktop */
+nav {
+    margin-left: auto;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+    color: #bcbcbc;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    font-family: 'Madimi One', sans-serif;
+    height: 60px;
+    position: fixed; 
+    width: 100%; 
+    background: rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(4px); 
+    z-index: 100; 
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navbar nav ul li a {
+    color: #bcbcbc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+nav ul li a,
+.navbar .btn {
+    color: #bcbcbc;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background: #49494b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: color 0.5s ease;
+}
+
+.btn:hover {
+    box-shadow: rgba(255, 255, 255, 0.9) 0px 3px 5px;
+}
+
+/* Burger Menu Styling */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 10px;
+}
+
+@media screen and (max-width: 768px) {  
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: #1E1E1E;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 400%;
+        width: 40%;
+        transition: right 0.3s ease-in-out;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
+        background-color: #333333;
+    }
+
+    nav ul.active {
+        right: 0;
+    }
+
+    .burger.toggle .line-1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.toggle .line-2 {
+        opacity: 0;
+    }
+
+    .burger.toggle .line-3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+#Hero {
+    min-height: 520px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center; 
+}
+
+.gambar1 img {
+    width: 320px;
+    height: auto;
+    display: block;
+   
+}
+
+.hero-right {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    margin-right: 0;
+    margin-left: 7rem;
+    padding: 0;
+}
+
+.hero-left {
+    color: #ffffff;
+    text-align: left;
+   margin:-2rem 5rem;
+   margin-top: -1rem;
+   font-size: 1.5rem;
+}
+
+.hero-left h1 {
+    font-size: 3rem;
+}
+
+.job-title {
+    font-weight: 300; 
+}
+
+.hero-left h1, .hero-left h3 {
+    margin: 0.5rem 0; 
+}
+
+#About{
+    min-height: 58vh;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background-color: #EDEBEB;
+    padding: 0;
+    margin: 0;
+}
+
+.gambar-kiri img{
+    width: 600px;
+    padding-bottom: -8px;
+    margin-top: -10rem;
+    margin-left: -1rem;
+}
+
+.about-kanan {
+    margin-top: 4rem;
+    font-family: "Space Groteks", sans-serif;
+    padding: 0; 
+    margin-right: 4rem;
+}
+
+.about-kanan p {
+    margin: 0 0 1rem 0; 
+    line-height: 1.5rem;
+}
+
+.about-kanan h2 {
+    margin: 0 0 1rem 0; 
+    text-align: center;
+}
+
+.about-kanan h3 {
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+
+#service {
+    height: 420px;
+    text-align: center;
+}
+
+.judul{
+    justify-content: center;
+    position: relative;
+    margin-top: 2rem;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.judul h2 {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.judul h1 {
+    font-size: 2rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.icon img {
+    margin-bottom: 0;
+    width: 150px;
+}
+
+.icon .icon3 img {
+    width: 140px;
+    padding-bottom: 9px;
+}
+
+
+.gambar1{
+    width: 200px;
+}
+
+.icon figcaption {
+font-weight: bold;
+font-size: 1.3rem;
+}
+.card {
+    border-radius: 20px;
+    box-shadow: gray;
+}
+#about {
+    height: 620px;
+    position: relative;
+    background-image:url(asset/background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover; 
+    color: #ffffff;
+ 
+}
+
+.title {
+    max-width: 700px;
+    margin-left:4rem;
+    margin-top: 5rem;
+}
+
+.title h2 {
+    font-size: 3rem;
+}
+
+.title h1 {
+    font-size: 4rem;
+}
+
+title h3 {
+    font-size: 4rem;
+}
+
+.about {
+    max-width: 600px;
+    margin: 3rem 4rem;
+}
+.artikel {
+    padding-top:  1.5rem;
+}
+
+.about h3 {
+ font-size: 1.5rem;
+ margin-bottom: 2rem ;
+}
+
+.about h4{
+    margin-bottom: 1rem;
+}
+
+#biography {
+    height: 480px;
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#biography::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('asset/map.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+#biography .judul {
+    text-align: center;
+    margin-right: 3rem;
+    font-size: 3rem;
+}
+
+.baris1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    text-align: center;
+    margin: -2.5rem;
+}
+
+.baris1 .ikon3 {
+    margin-top: 6rem;
+    position: relative;
+}
+
+.baris2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    text-align: center;
+    padding-right: 19rem;
+    margin-top: 0;
+}
+
+#biography svg {
+    width: 5rem;
+    color: #4f4f50;
+}
+
+#skill {
+    min-height: 420px;
+}
+
+#skill .judul h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+#skill .software {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 3.5rem;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem; 
+}
+
+#skill .box {
+    position: relative;
+    width: 100%; 
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(117, 116, 116, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+}
+
+#skill .box:hover {
+    transform: scale(1.05); 
+}
+
+#skill .box img {
+    width: 100%; 
+    display: block;
+}
+
+#skill .box p {
+    position: absolute;
+    bottom: -100%; 
+    left: 0;
+    width: 100%; 
+    height: 40%; 
+    padding: 0; 
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.8); 
+    color: white; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    opacity: 0; 
+    transition: bottom 0.4s ease, opacity 0.4s ease; 
+}
+
+#skill .box:hover p {
+    bottom: 0; 
+    opacity: 1; 
+}
+
+/* Progress bar */
+.progres {
+    width: 100%; 
+    height: 15px;
+    background-color: #77777a;
+    border-radius: 30px;
+    margin-top: 1rem; 
+} 
+
+.progres div {
+    height: 100%;
+    border-radius: inherit;
+}
+
+.progres1 { width: 80%; background-color: rgb(40, 40, 40); }
+.progres2 { width: 75%; background-color: rgb(56, 89, 255); }
+.progres3 { width: 50%; background-color: rgb(80, 42, 15); }
+.progres4 { width: 80%; background-color: rgb(255, 118, 20); }
+.progres5 { width: 70%; background-color: rgb(7, 164, 255); }
+.progres6 { width: 35%; background-color: rgb(255, 238, 0); }
+
+
+svg{
+    width: 100%;
+    font-family: "groteks" sans-serif;
+    margin-top: 0;
+}
+
+svg text {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 5rem;
+    animation: stroke 5s infinite alternate;
+}
+
+#Portofolio {
+    height: auto;
+    min-height: 300vh;
+    background: black;
+    color: #ffffff;
+    text-align: center;
+  
+}
+
+@keyframes stroke {
+    0% {
+        stroke: white;
+        stroke-width: 0;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+    }
+    70% {
+        stroke: white;
+    }
+    80% {
+        stroke: white;
+        stroke-width: 3;
+    }
+    100% {
+        stroke: white;
+        stroke-width: 0;
+        stroke-dashoffset: -25%;
+        stroke-dasharray:50%, 0;
+}
+}
+
+.title-portofolio {
+    font-size: 1.9rem
+}
+.teks-gradient {
+    background-image: linear-gradient(to right,
+        rgb(157, 0, 255),
+        rgb(0, 140, 255)
+    );
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent; 
+}
+
+.canva-container{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 4rem;
+    font-family: "madimi one" sans-serif;
+}
+
+.porto-ui:hover {
+    transform: scale(1.10); 
+}
+
+.porto-ui {
+    border: 5px solid ; 
+    border-radius: 20%;
+    padding: 2rem; 
+    border-image-source: linear-gradient(45deg, rgb(157, 0, 255), rgb(0, 140, 255));
+    border-image-slice: 1;
+    transition: transform 0.3s ease; 
+
+}
+
+
+.porto-ui img {
+    border-radius: 20px; 
+    display: block;
+    width: 14rem; 
+    object-fit: cover;  
+}
+
+.porto-ui .canva1 h3 {
+    color: rgb(86, 255, 137);
+}
+.porto-ui .canva2 h3 {
+    color: rgb(43, 96, 255);
+}
+.porto-ui .canva3 h3 {
+    color: rgb(149, 0, 255);
+}
+
+.canva-container p {
+    max-width: 14rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.canva-container h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.title-figma {
+    font-size: 1.9rem;
+    margin-top: 6rem;
+}
+.figma-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.figma-container img {
+ width: 19rem;
+}
+
+.figma-container p{
+    max-width: 19rem;
+    margin-top: 1rem;
+    line-height: 1.2rem;
+}
+
+.figma-gradient {
+    background-image: linear-gradient(to right,
+        rgb(255, 174, 0),
+        rgb(255, 65, 65)
+    );
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent; 
+}
+
+.porto-figma h2 {
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.porto-figma .tombol {
+    margin-top: 1.5rem;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    background: linear-gradient( to right, 
+    rgb(255, 217, 135),
+    rgb(255, 150, 150)
+    );
+    color: #000000;
+    font-style: bold;
+    font-family: "madimi one", sans-serif;
+    font-size: 0.9rem;
+    transition: color 0.4s ease; 
+    border: none;
+}
+
+.porto-figma .tombol:hover {
+    background: linear-gradient(to right, 
+        rgb(255, 174, 0), 
+        rgb(255, 65, 65)
+    );
+    color: #ffffff;
+}
+
+.porto-figma {
+    border: 2px solid ; 
+    border-radius: 20%;
+    padding: 1rem; 
+    border-image-source: linear-gradient(45deg,rgb(255, 174, 0),
+    rgb(255, 65, 65));
+    border-image-slice: 1;
+    transition: transform 0.3s ease; 
+}
+
+.porto-figma:hover {
+    transform: scale(1.10); 
+}
+
+.title-porto h1 {
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+.porto-gradient {
+    background-image: linear-gradient(to right,
+        rgb(255, 0, 0),
+        rgb(0, 179, 255)
+    );
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent; 
+}
+
+.projek-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 20px;
+    background-color: #121212;
+    padding: 4rem 0rem;
+    
+}
+
+.projek-web {
+    border: 2px solid ; 
+    border-radius: 20%;
+    padding: 1rem; 
+    border-image-source: linear-gradient(45deg,  rgb(255, 0, 0),
+    rgb(0, 179, 255));
+    border-image-slice: 1;
+    transition: transform 0.3s ease; }
+
+.projek-container img{
+width: 30rem;
+}
+
+.projek-container h1{
+    margin-top: 1rem;
+    font-size: 1.9rem;
+    color: rgb(0, 191, 255);
+}
+
+.projek-container p {
+    margin-top: 1rem;
+    max-width: 30rem;
+}
+
+
+#Contact {
+    background-color: #ffffff;
+    padding: 2rem 5%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-left h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #444;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form .btn-submit {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start; 
+}
+
+.contact-form .btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.contact-right {
+    margin-top: 3rem;
+}
+
+.contact-right .contact-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-right .item-icon {
+    width: 3rem; 
+    height: 3rem;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: #f3f3f3; 
+    border-radius: 50%; 
+    font-size: 1rem;
+}
+
+.contact-right .item-icon svg {
+    width: 20px; 
+    height: 20px;
+}
+
+
+
+.contact-right .icon-detail {
+    text-align: left;
+}
+
+.contact-right .icon-detail h4 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.contact-right .icon-detail p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.button-cv a {
+    text-decoration: none;
+}
+
+.button-cv .cv {
+    width: 8rem;
+    height: 3rem;
+    background-color: #000000; 
+    color: white; 
+    border: none;
+    border-radius: 8px;
+    padding: 2px;
+    font-size: 1rem; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+
+.button-cv .cv:hover {
+    background-color: #555555;
+    transform: scale(1.05); 
+}
+
+.button-cv .cv:active {
+    background-color: #333333;
+    transform: scale(0.95); 
+}
+
+.sosial-container {
+    margin-top: 5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.instagram svg{
+    transition: transform 0.3s ease; 
+}
+
+.instagram svg:hover {
+    transform: scale(1.20); 
+}
+
+
+.notification {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 1s forwards, fadeOut 1s 6s forwards; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+#footer {
+    background-color: #000000;
+    min-height: 15vh;
+}
+
+.footer-container{
+    display: flex;
+    gap: 21rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.copyright {
+    color: white;
+    font-family: "lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.copyright span {
+    color: #555555;
+    white-space: 5px;
+}
+
+.footer-logo img {
+    width: 7rem;
+}
+
+.sosmed {
+    display: flex;
+    gap: 1rem;
+}
+
+/* RESPONSIVE*/
+@media (max-width: 768px) {
+
+    #skill .software {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: .5rem; 
+        margin-bottom: 4rem;
+    }
+
+    .box-container {
+        width: 70%; 
+        max-width: 300px; 
+        margin-left: 2rem;
+    }
+
+  
+}
+
+@media (max-width: 768px) {
+    #Hero {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        min-height: 120vh
+    }
+
+    .hero-left {
+        margin: 1rem 0;
+        text-align: center; 
+        margin-top: 5rem;
+    }
+
+    .hero-right {
+        margin: 0; 
+        margin-right: 8rem;
+    }
+    .hero-left h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-left h4 {
+        font-size: 1.3rem;
+    }
+
+    .hero-left h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #About {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .about-kanan {
+        margin-top: 0;
+        text-align: center;
+        max-width: 70%;
+    }
+
+    .about-kanan h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-kanan p {
+        max-width: 100%;
+        font-size: .8rem;
+        margin-left: 0rem;
+        padding: 1rem;
+        gap: 0;
+    }
+
+
+    .about-kanan h3 {
+        margin-right: 0rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #service {
+      min-height: 100vh;
+    }
+
+    #service .icon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: .5rem; 
+        margin-bottom: 4rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #about { 
+        text-align: center;
+    }
+
+    #about .title {
+        margin-right: 3rem;
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+
+    #about .title h2 {
+        font-size: 2rem;
+    }
+    #about .title h1 {
+        font-size: 3rem;
+    }
+    #about .title h3 {
+        font-size: 1rem;
+    }
+
+    .about {
+        margin-top: .5rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #biography {
+
+        min-height: 140vh;
+    }
+    .baris1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 0;
+        margin: 3rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .baris2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem;
+        margin-top: 1rem 1rem;
+        margin-bottom: 2rem;
+        margin-left: 16rem;
+    }
+
+    .baris2 .ikon4 {
+        margin-top: 2rem;
+        margin-left: 0rem;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    #Portofolio svg text {
+        font-size: 10rem;
+        transform: translateY(40%);
+    }
+
+    #Portofolio .title-portofolio {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .canva-container {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        margin-top: 0rem;
+        max-width: 600px
+    }
+
+    .title-figma{
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .figma-container{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        margin-top: 0rem;
+        max-width: 700px
+    }
+
+    .projek-container {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        margin-top: 0rem;
+        max-width: 100%
+    }
+
+        .projek-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            gap: 20px; 
+        }
+    
+        .projek-web {
+            width: 100%; 
+            max-width: 100%; 
+            text-align: center; 
+        }
+    
+        .projek-web img {
+            max-width: 100%;
+            height: auto; 
+            object-fit: cover; 
+        }
+
+
+    }
+
+@media (max-width: 768px) {
+
+    #Contact .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 20px; }
+
+    #Contact .contact-left,
+    #Contact .contact-right {
+        width: 100%; 
+        text-align: center;
+    }
+
+    #Contact .contact-form {
+        width: 100%;
+        max-width: 600px; ;
+    }
+
+    #Contact .contact-right .contact-icon {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: 15px; 
+    }
+
+    #Contact .sosial-container {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .sosial-container .button-cv,
+    .sosial-container .instagram {
+        margin: 10px auto;
+    }
+
+    /* Footer Section */
+    #footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 15px; 
+        gap: 10px; 
+    }
+
+    #footer .copyright,
+    #footer .footer-logo,
+    #footer .sosmed {
+        margin: 10px 0; 
+    }
+
+    #footer .sosmed {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #footer .sosmed div {
+        margin: 0 auto;
+    }
+
+    #footer .footer-logo img {
+        width: 80px; 
+    }
+
+    #footer {
+        font-size: 14px; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Gaya untuk iPad dalam mode lanskap */
+    #Hero {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    .hero-left {
+        margin: 1rem 0;
+        margin-top: 5rem;
+        margin-left: -2rem;
+    }
+
+    .hero-right { 
+        margin: 0;
+        margin-right: 0;
+        margin-top: 6rem;
+    }
+
+    .hero-right img{
+        width: 270px;
+    }
+    .hero-left h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-left h4 {
+        font-size: 1.3rem;
+    }
+
+    .hero-left h3 {
+        font-size: 1.4rem;
+    }
+
+    #About {
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .about-kanan {
+        margin-top: 0;
+    }
+
+    .about-kanan h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-kanan p {
+        max-width: 100%;
+        font-size: .8rem;
+        margin-left: 5rem;
+        padding: 1rem;
+
+    }
+
+    .about-kanan h3 {
+        margin-right: 0rem;
+        margin-top: 1rem;
+    }
+
+    .gambar-kiri img {
+      padding-top: 10rem;
+    }
+
+    #biography {
+
+        min-height: 140vh;
+    }
+    .baris1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 0;
+        margin: 3rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .baris2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 13rem;
+        margin-top: 1rem 1rem;
+        margin-bottom: 2rem;
+        margin-left: 23rem;
+    }
+
+    .baris2 .ikon4 {
+        margin-top: 2rem;
+        margin-left: 0rem;
+
+    }
+
+    #skill .software{
+        margin-bottom: 3rem;
+    }
+
+    #Portofolio svg text {
+        font-size: 10rem;
+        transform: translateY(40%);
+    }
+
+    #Portofolio .title-portofolio {
+        margin-top: 3rem;
+    }
+
+    .canva-container {
+        display: flex;
+        flex-direction: column;
+        padding: 16rem;
+        margin-top: -10rem;
+        max-width: 100%
+    }
+
+    .title-figma{
+        margin-top: 0;
+    }
+
+    .figma-container{
+        display: flex;
+        flex-direction: column;
+        padding: 13rem;
+        margin-top: -3rem;
+        max-width: 1000px
+    }
+
+    .projek-container {
+        display: flex;
+        flex-direction: row;
+        padding: 3rem;
+        margin-top: 0rem;
+        max-width: 100%
+    }
+
+        .projek-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center; 
+            gap: 20px; 
+        }
+    
+        .projek-web {
+            width: 100%; 
+            max-width: 100%; 
+            text-align: center; 
+        }
+    
+        .projek-web img {
+            max-width: 100%;
+            height: auto; 
+            object-fit: cover; 
+        }
+
+        #footer .footer-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            padding: 10px 15px; 
+            gap: 8rem; 
+        }
+    
+        #footer .copyright,
+        #footer .footer-logo,
+        #footer .sosmed {
+            margin: 10px 0; 
+        }
+    
+        #footer .sosmed {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    
+        #footer .sosmed div {
+            margin: 0 auto;
+        }
+    
+        #footer .footer-logo img {
+            width: 80px; 
+        }
+    
+        #footer {
+            font-size: 14px; 
+        }
+}
+
+>>>>>>> 69e48408670e1dbe241e6ac386c9874342fc6dad
